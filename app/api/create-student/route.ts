@@ -1,9 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
-
 const supabaseAdmin = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SECRET_KEY!        // ← your secret key name
+  process.env.SUPABASE_SERVICE_ROLE_KEY!  // ← match Vercel variable name
 );
 
 export async function POST(req: NextRequest) {
