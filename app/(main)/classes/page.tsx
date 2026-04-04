@@ -595,7 +595,7 @@ videoRef: React.RefObject<HTMLVideoElement | null>;
   return (
     <>
       {/* Breadcrumb */}
-      <div style={{ fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#A8A29E", marginBottom: "12px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+      <div style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#A8A29E", marginBottom: "12px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
         <span style={{ color: activeCourse.color }}>{activeCourse.title}</span>
         <span style={{ margin: "0 8px" }}>›</span>
         <span>{activeLesson.title}</span>
