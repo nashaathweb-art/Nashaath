@@ -110,14 +110,13 @@ export default function Header() {
     { href: "/",         label: "Home"    },
     { href: "/courses",  label: "Courses" },
     { href: "/about",    label: "About"   },
-    { href: "/#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 w-full bg-[#FAFAF8] z-50 font-serif transition-all duration-300 ${scrolled ? "shadow-sm border-b border-stone-200" : "border-b border-transparent"}`}>
+    <header className={`p-5 fixed top-0 left-0 right-0 w-full bg-[#FAFAF8] z-50 font-serif transition-all duration-300 ${scrolled ? "shadow-sm border-b border-stone-200" : "border-b border-transparent"}`}>
 
       {/* Top colour strip */}
-      <div className="h-[3px] bg-gradient-to-r from-amber-700 via-violet-700 to-rose-700" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
@@ -125,16 +124,16 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
             <Image
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Nashaath Boutique"
-              width={36}
-              height={36}
+              width={106}
+              height={106}
               className="rounded-sm object-contain"
             />
-            <div>
+            {/* <div>
               <span className="text-base font-normal tracking-wide text-stone-900">Nashaath</span>
               <span className="block text-[9px] uppercase tracking-[0.25em] text-amber-700 leading-none">Boutique</span>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Nav */}

@@ -201,46 +201,7 @@ export default function Hero() {
           </div>
 
           {/* Trust stats */}
-          <div
-            style={{
-              marginTop: "48px",
-              paddingTop: "32px",
-              borderTop: "1px solid #EDE8E0",
-              display: "flex",
-              gap: "40px",
-              flexWrap: "wrap",
-            }}
-          >
-            {[
-              { value: "500+", label: "Happy Clients" },
-              { value: "6",    label: "Courses Offered" },
-              { value: "100%", label: "Custom Fit" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div
-                  style={{
-                    fontSize: "26px",
-                    fontWeight: 400,
-                    color: "#B45309",
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  {s.value}
-                </div>
-                <div
-                  style={{
-                    fontSize: "10px",
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: "#A8A29E",
-                    marginTop: "2px",
-                  }}
-                >
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          
         </div>
 
         {/* Right: feature card */}

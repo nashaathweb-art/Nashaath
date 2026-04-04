@@ -5,6 +5,7 @@ import ClassesSection from "@/components/home/class";
 import Testimonials from "@/components/home/testimonial";
 import StatsSection from "@/components/home/stats";
 import CTASection from "@/components/home/ctasection";
+import WhatsAppButton from "@/components/home/watsapp";
 
 export default async function Home() {
   const { data, error } = await supabase.auth.getSession();
@@ -18,6 +19,7 @@ export default async function Home() {
       <ClassesSection />
       <Testimonials />
       <CTASection />
+      <WhatsAppButton />
     </>
   );
 }
