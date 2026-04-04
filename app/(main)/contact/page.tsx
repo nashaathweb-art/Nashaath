@@ -125,11 +125,7 @@ export default function ContactPage() {
           <p className="text-sm text-stone-700">Kondotty, Kerala, India</p>
         </div>
 
-        {/* Sign off */}
-        <p className="mt-10 text-center text-[10px] tracking-[0.2em] text-stone-300 uppercase">
-          ✦ Craft Your Future — One Stitch at a Time ✦
-        </p>
-
+      
       </div>
     </div>
   );

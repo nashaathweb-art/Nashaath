@@ -35,7 +35,7 @@ export default function AdminDashboard() {
     const checkAdmin = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session || session.user.email !== ADMIN_EMAIL) {
-        router.push("/adminlogin");
+        router.push("/admin");
       } else {
         setChecking(false);
       }

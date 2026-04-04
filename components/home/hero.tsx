@@ -158,8 +158,8 @@ export default function Hero() {
           </p>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            <Link
-              href="/collections"
+            <a
+              href="https://www.instagram.com/nashaathboutique?igsh=YjU0bXltbTN5Ymk="
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -177,7 +177,7 @@ export default function Hero() {
               }}
             >
               Browse Collections →
-            </Link>
+            </a>
             <Link
               href="/about"
               style={{

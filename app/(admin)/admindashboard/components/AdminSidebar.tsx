@@ -44,7 +44,7 @@ export default function AdminSidebar({ active, onNavigate }: Props) {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    router.push("/adminlogin");
+    router.push("/admin");
   };
 
   return (

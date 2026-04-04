@@ -85,7 +85,7 @@ export default function AboutPage() {
         <p style={{ fontSize: "15px", color: "#78716C", maxWidth: "440px", margin: "0 auto 32px", lineHeight: 1.8, fontStyle: "italic" }}>
           Your family's wardrobe deserves pieces as unique as you are. Browse our collections and let us bring your dream dresses to reality.
         </p>
-        <a href="/collections" style={{ display: "inline-block", padding: "13px 36px", background: "#B45309", color: "#fff", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", borderRadius: "2px", textDecoration: "none", fontFamily: "Georgia,serif" }}>
+        <a href="https://www.instagram.com/nashaathboutique?igsh=YjU0bXltbTN5Ymk=" style={{ display: "inline-block", padding: "13px 36px", background: "#B45309", color: "#fff", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", borderRadius: "2px", textDecoration: "none", fontFamily: "Georgia,serif" }}>
           Browse Collections →
         </a>
       </div>

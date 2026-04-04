@@ -97,7 +97,7 @@ const Footer = () => {
                 { label: "How It Works",    href: "#" },
                 { label: "Enrolment Guide", href: "#" },
                 { label: "Fitting Process", href: "#" },
-                { label: "Contact Us",      href: "/#contact" },
+                { label: "Contact Us",      href: "/contact" },
                 { label: "WhatsApp Us",     href: "#" },
               ].map(({ label, href }) => (
                 <li key={label}>
@@ -150,7 +150,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <span className="text-[10px] uppercase tracking-widest text-stone-400">✦ 24×7 Support</span>
             <a href="tel:+919876543210" className="text-[11px] font-normal text-amber-700 hover:text-amber-800 transition-colors tracking-wide">
-              +91 98765 43210
+              +919605664029
             </a>
           </div>
         </div>
