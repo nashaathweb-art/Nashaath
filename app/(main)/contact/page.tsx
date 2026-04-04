@@ -38,7 +38,7 @@ export default function ContactPage() {
 
           {/* Phone 2 */}
           <a
-            href="tel:+919605664029"
+            href="+91 94479 03002"
             className="flex items-center gap-4 p-5 bg-white border border-stone-200 rounded-[3px] hover:border-amber-300 hover:bg-amber-50 transition-colors group"
           >
             <div className="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-100 transition-colors">
@@ -48,13 +48,13 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-0.5">Alternate Phone</p>
-              <p className="text-sm text-stone-800">+91 96056 64029</p>
+              <p className="text-sm text-stone-800"> +91 94479 03002</p>
             </div>
           </a>
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/919447903002"
+            href="https://wa.me/+91 96056 64029?text=Hello%20Nashaath%20Team%2C%20I%20have%20a%20query%20regarding%20your%20online%20courses.%20Please%20assist."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 p-5 bg-white border border-stone-200 rounded-[3px] hover:border-green-300 hover:bg-green-50 transition-colors group"
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-0.5">WhatsApp</p>
-              <p className="text-sm text-stone-800">+91 94479 03002</p>
+              <p className="text-sm text-stone-800">+91 96056 64029</p>
             </div>
           </a>
 

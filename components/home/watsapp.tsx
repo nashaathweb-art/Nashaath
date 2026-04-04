@@ -4,7 +4,7 @@
 export default function WhatsAppButton() {
   return (
     
-     <a href="https://wa.me/919876543210"
+     <a href="https://wa.me/919605664029?text=Hello%20Nashaath%20Team%2C%20I%20have%20a%20query%20regarding%20your%20online%20courses.%20Please%20assist."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-7 right-6 z-50 w-13 h-13 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"

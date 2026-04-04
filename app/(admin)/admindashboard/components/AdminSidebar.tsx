@@ -51,7 +51,6 @@ export default function AdminSidebar({ active, onNavigate }: Props) {
     <div className="w-60 min-h-screen bg-stone-950 flex flex-col flex-shrink-0 font-serif">
 
       {/* Top strip */}
-      <div className="h-1 bg-gradient-to-r from-amber-700 via-violet-700 via-blue-700 via-emerald-700 via-rose-700 to-amber-900" />
 
       {/* Logo */}
       <div className="px-6 pt-7 pb-6 border-b border-stone-900">

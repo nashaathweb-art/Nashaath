@@ -33,8 +33,8 @@ const YoutubeIcon = () => (
 
 const socials = [
   { label: "Facebook",  href: "#", icon: <FacebookIcon /> },
-  { label: "Instagram", href: "#", icon: <InstagramIcon /> },
-  { label: "WhatsApp",  href: "#", icon: <WhatsAppIcon /> },
+  { label: "Instagram", href: "https://www.instagram.com/nashaathboutique?igsh=YjU0bXltbTN5Ymk=", icon: <InstagramIcon /> },
+  { label: "WhatsApp",  href: "https://wa.me/919605664029?text=Hello%20Nashaath%20Team%2C%20I%20have%20a%20query%20regarding%20your%20online%20courses.%20Please%20assist.", icon: <WhatsAppIcon /> },
   { label: "YouTube",   href: "#", icon: <YoutubeIcon /> },
 ];
 
@@ -98,7 +98,7 @@ const Footer = () => {
                 { label: "Enrolment Guide", href: "#" },
                 { label: "Fitting Process", href: "#" },
                 { label: "Contact Us",      href: "/contact" },
-                { label: "WhatsApp Us",     href: "#" },
+                { label: "WhatsApp Us",     href: "https://wa.me/919605664029?text=Hello%20Nashaath%20Team%2C%20I%20have%20a%20query%20regarding%20your%20online%20courses.%20Please%20assist." },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <Link href={href} className="text-xs text-stone-500 hover:text-amber-700 transition-colors">

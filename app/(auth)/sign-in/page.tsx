@@ -39,7 +39,6 @@ export default function SignInPage() {
     <div style={{ minHeight: "100vh", background: "#FAFAF8", fontFamily: "'Georgia','Times New Roman',serif", display: "flex", flexDirection: "column" }}>
 
       {/* Top strip */}
-      <div style={{ height: "4px", background: "linear-gradient(90deg,#B45309,#6D28D9,#1D4ED8,#047857,#BE123C,#92400E)" }} />
 
       {/* Center card */}
       <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 24px" }}>
