@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 
 interface Course {
@@ -25,7 +24,6 @@ interface Course {
 const filters = ["All", "Beginner", "Intermediate", "Advanced", "Expert"];
 
 export default function Courses() {
-  const router = useRouter();
 
   const [courses, setCourses] = useState<Course[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
@@ -49,19 +47,12 @@ export default function Courses() {
     fetchCourses();
   }, []);
 
-  const handleEnrollClick = async (e: React.MouseEvent, course: Course) => {
-    e.stopPropagation();
-    const {
-      data: { session },
-    } = await supabase.auth.getSession();
-    if (!session) {
-      router.push("/sign-in");
-      return;
-    }
-    setModalCourse(course);
-    setModalOpen(true);
-    setEnrolled(null);
-  };
+ const handleEnrollClick = (e: React.MouseEvent, course: Course) => {
+  e.stopPropagation();
+  setModalCourse(course);
+  setModalOpen(true);
+  setEnrolled(null);
+};
 
  const handleEnroll = () => {
   if (!modalCourse) return;
