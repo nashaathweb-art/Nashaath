@@ -580,7 +580,7 @@ function LessonView({
 }: {
   activeCourse: Course;
   activeLesson: Lesson;
-  videoRef: React.RefObject<HTMLVideoElement>;
+videoRef: React.RefObject<HTMLVideoElement | null>;
   videoLoading: boolean;
   videoError: string | null;
   signedUrl: string | null;
