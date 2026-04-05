@@ -57,7 +57,7 @@ export default function Courses() {
  const handleEnroll = () => {
   if (!modalCourse) return;
   const message = `Hi, I would like to enroll in the *${modalCourse.title}* course (${modalCourse.plan_name} - ₹${modalCourse.plan_price?.toLocaleString("en-IN")}). Please guide me with the next steps.`;
-  const url = `https://wa.me/+9196056 64029?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/+919605664029?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 };
 
