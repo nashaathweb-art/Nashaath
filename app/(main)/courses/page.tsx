@@ -24,7 +24,6 @@ interface Course {
 const filters = ["All", "Beginner", "Intermediate", "Advanced", "Expert"];
 
 export default function Courses() {
-
   const [courses, setCourses] = useState<Course[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [filter, setFilter] = useState("All");
@@ -47,19 +46,19 @@ export default function Courses() {
     fetchCourses();
   }, []);
 
- const handleEnrollClick = (e: React.MouseEvent, course: Course) => {
-  e.stopPropagation();
-  setModalCourse(course);
-  setModalOpen(true);
-  setEnrolled(null);
-};
+  const handleEnrollClick = (e: React.MouseEvent, course: Course) => {
+    e.stopPropagation();
+    setModalCourse(course);
+    setModalOpen(true);
+    setEnrolled(null);
+  };
 
- const handleEnroll = () => {
-  if (!modalCourse) return;
-  const message = `Hi, I would like to enroll in the *${modalCourse.title}* course (${modalCourse.plan_name} - ₹${modalCourse.plan_price?.toLocaleString("en-IN")}). Please guide me with the next steps.`;
-  const url = `https://wa.me/+919605664029?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
-};
+  const handleEnroll = () => {
+    if (!modalCourse) return;
+    const message = `Hi, I would like to enroll in the *${modalCourse.title}* course (${modalCourse.plan_name} - ₹${modalCourse.plan_price?.toLocaleString("en-IN")}). Please guide me with the next steps.`;
+    const url = `https://wa.me/+919605664029?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
 
   const closeModal = () => {
     setModalOpen(false);
@@ -462,7 +461,6 @@ export default function Courses() {
                     </ul>
                   </div>
                 </div>
-
                 <div
                   style={{
                     display: "flex",
@@ -472,23 +470,60 @@ export default function Courses() {
                     paddingTop: "18px",
                   }}
                 >
-                  <button
-                    onClick={(e) => handleEnrollClick(e, course)}
+                  <div
                     style={{
-                      padding: "10px 24px",
-                      background: course.color,
-                      border: "none",
-                      color: "#FFFFFF",
-                      fontSize: "11px",
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      borderRadius: "2px",
-                      cursor: "pointer",
-                      fontFamily: "Georgia,serif",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
                     }}
                   >
-                    Enroll Now
-                  </button>
+                    <button
+                      onClick={(e) => handleEnrollClick(e, course)}
+                      style={{
+                        padding: "10px 24px",
+                        background: course.color,
+                        border: "none",
+                        color: "#FFFFFF",
+                        fontSize: "11px",
+                        letterSpacing: "0.18em",
+                        textTransform: "uppercase",
+                        borderRadius: "2px",
+                        cursor: "pointer",
+                        fontFamily: "Georgia,serif",
+                      }}
+                    >
+                      Enroll Now
+                    </button>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          color: "#A8A29E",
+                          textDecoration: "line-through",
+                          letterSpacing: "0.03em",
+                        }}
+                      >
+                        ₹12,000
+                      </span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          color: course.color,
+                          fontWeight: 500,
+                          letterSpacing: "-0.01em",
+                          lineHeight: 1.1,
+                        }}
+                      >
+                        ₹{course.plan_price?.toLocaleString("en-IN")}
+                      </span>
+                    </div>
+                  </div>
                   <span
                     style={{
                       fontSize: "11px",
@@ -636,6 +671,7 @@ export default function Courses() {
               )}
 
               {/* Plan name + price */}
+              {/* Plan name + price */}
               <div
                 style={{
                   display: "flex",
@@ -653,15 +689,34 @@ export default function Courses() {
                 >
                   {modalCourse.plan_name}
                 </span>
-                <span
+                <div
                   style={{
-                    fontSize: "26px",
-                    color: modalCourse.color,
-                    letterSpacing: "-0.02em",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-end",
                   }}
                 >
-                  ₹{modalCourse.plan_price?.toLocaleString("en-IN")}
-                </span>
+                  <span
+                    style={{
+                      fontSize: "12px",
+                      color: "#A8A29E",
+                      textDecoration: "line-through",
+                      letterSpacing: "0.03em",
+                    }}
+                  >
+                    ₹12,000
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "26px",
+                      color: modalCourse.color,
+                      letterSpacing: "-0.02em",
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    ₹{modalCourse.plan_price?.toLocaleString("en-IN")}
+                  </span>
+                </div>
               </div>
 
               {/* Duration */}
